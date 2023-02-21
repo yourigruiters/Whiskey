@@ -1,6 +1,6 @@
 # Whiskey assignment
 
-Whiskey selection application created as an assignment provided to me.
+Whiskey selection application created as an assignment provided to me. The application has been created using a mobile first responsive design approach.
 
 ## Installation & Startup
 
@@ -25,23 +25,26 @@ Main
 - React-router-dom
 - TypeScript
 - Vite
-- Tailwind (Mobile first responsive)
+- Tailwind
 
 Secondary
 
 - Classnames
 - Axios
 
-### Screenshots
+## Screenshots
 
-Home
+**Home**
+
 ![home](/readme_screenshots/home.png)
 ![home-bottom](/readme_screenshots/home-bottom.png)
 
-Single whiskey page
+**Single whiskey page**
+
 ![single](/readme_screenshots/single.png)
 
-Responsive images
+**Responsive images**
+
 ![responsive-home](/readme_screenshots/responsive-home.png)
 ![responsive-home-bottom](/readme_screenshots/responsive-home-bottom.png)
 ![responsive-single](/readme_screenshots/responsive-single.png)

@@ -19,7 +19,6 @@ const WhiskeyPage = () => {
           (singleWhiskey) => singleWhiskey.title === title
         );
 
-        console.log(currentWhiskey);
         setWhiskey(currentWhiskey);
       });
     }
