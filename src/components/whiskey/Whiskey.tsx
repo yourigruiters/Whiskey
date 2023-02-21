@@ -50,7 +50,7 @@ const Whiskey: FC<IWhiskey> = ({
       >
         <img
           src={image}
-          alt="Whiskey-image"
+          alt={`Whiskey image of ${title}`}
           className={classNames({
             "absolute -right-10 bottom-0 w-[160px] md:static md:w-[205px] md:h-auto":
               checkoutPage,

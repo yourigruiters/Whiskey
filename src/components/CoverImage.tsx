@@ -32,7 +32,7 @@ const CoverImage: FC<ICoverImage> = ({ title, teaser, url, img }) => {
       <div className="relative w-full h-auto rounded-md overflow-hidden">
         <img
           src={img}
-          alt="CoverImage"
+          alt={`Coverimage - ${title}`}
           className={classNames("transition-all", {
             "scale-105": isHovered,
           })}
