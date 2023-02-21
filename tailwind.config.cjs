@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
+      white: "#fff",
+      black: "#000",
       islands: {
         default: "#D71E44",
         hover: "#9E1B34",
