@@ -11,6 +11,7 @@ const CollectionPage = () => {
 
   useEffect(() => {
     axios.get("/mockAPI/articles.json").then((resp) => {
+      console.log(resp.data);
       setArticles(resp.data);
     });
 
@@ -28,13 +29,13 @@ const CollectionPage = () => {
     <>
       <Title title="Whiskey selection" />
       <Tabs activeTab={activeTab} handleTabClick={handleTabClick} />
-      {articles.map(({ title, teaser, link, img }) => {
+      {articles.map(({ title, teaser, url, img }) => {
         return (
           <CoverImage
             key={title}
             title={title}
             teaser={teaser}
-            link={link}
+            url={url}
             img={img}
           />
         );
