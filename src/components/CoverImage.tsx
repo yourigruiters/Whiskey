@@ -12,6 +12,7 @@ const CoverImage: FC<ICoverImage> = ({ title, teaser, url, img }) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleCLick = () => {
+    console.log("hgoan");
     window.open(url, "_blank");
   };
 
@@ -21,6 +22,12 @@ const CoverImage: FC<ICoverImage> = ({ title, teaser, url, img }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleCLick}
+      onKeyUp={(e) => {
+        if (e.key === "Enter") {
+          handleCLick();
+        }
+      }}
+      tabIndex={0}
     >
       <div className="relative w-full h-auto rounded-md overflow-hidden">
         <img

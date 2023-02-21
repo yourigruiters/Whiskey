@@ -14,7 +14,7 @@ interface ITab {
 
 const Tab: FC<ITab> = ({ title, active = false, handleTabClick }) => {
   return (
-    <div
+    <button
       className={classNames(
         "flex justify-center items-center w-auto h-auto py-2 px-4 rounded-3xl border cursor-pointer",
         {
@@ -25,7 +25,7 @@ const Tab: FC<ITab> = ({ title, active = false, handleTabClick }) => {
       onClick={() => handleTabClick(title)}
     >
       <p className="capitalize">{title}</p>
-    </div>
+    </button>
   );
 };
 
