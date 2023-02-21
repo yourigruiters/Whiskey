@@ -6,6 +6,9 @@ module.exports = {
     colors: {
       white: "#fff",
       black: "#000",
+      grayish: "#EFEFEF",
+      gray: "#A9A9A9",
+      grayer: "#5C5C5C",
       islands: {
         default: "#D71E44",
         hover: "#9E1B34",

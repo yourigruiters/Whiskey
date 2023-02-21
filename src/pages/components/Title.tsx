@@ -7,7 +7,7 @@ interface ITitle {
 const Title: FC<ITitle> = ({ title }) => {
   return (
     <section className="w-full h-auto text-center">
-      <h1 className="font-bold text-3xl uppercase italic md:text-4xl lg:text-5xl">
+      <h1 className="font-bold text-3xl uppercase italic md:text-4xl lg:text-5xl transition-all">
         {title}
       </h1>
     </section>

@@ -1,14 +1,14 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import classNames from "classnames";
 
-interface ICoverImage {
+export interface ICoverImage {
   title: string;
-  description: string;
+  teaser: string;
   link: string;
-  image: any;
+  img: string;
 }
 
-const CoverImage: FC<ICoverImage> = ({ title, description, link, image }) => {
+const CoverImage: FC<ICoverImage> = ({ title, teaser, link, img }) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
@@ -20,7 +20,7 @@ const CoverImage: FC<ICoverImage> = ({ title, description, link, image }) => {
       <a href={link}>
         <div className="relative w-full h-auto rounded-md overflow-hidden">
           <img
-            src={image}
+            src={img}
             alt="CoverImage"
             className={classNames("transition-all", {
               "scale-105": isHovered,
@@ -32,7 +32,7 @@ const CoverImage: FC<ICoverImage> = ({ title, description, link, image }) => {
                 {title}
               </h4>
               <p className="w-4/5 text-xs text-white md:w-2/5 md:text-sm lg:w-3/5">
-                {description}
+                {teaser}
               </p>
             </div>
           </div>
