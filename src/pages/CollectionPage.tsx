@@ -17,7 +17,6 @@ const CollectionPage = () => {
     });
 
     axios.get("/mockAPI/whiskies.json").then((resp) => {
-      console.log(resp.data);
       setWhiskies(resp.data);
     });
   }, []);
@@ -33,7 +32,7 @@ const CollectionPage = () => {
     );
 
     setWhiskiesToDisplay(newWhiskies);
-  }, [activeTab]);
+  }, [activeTab, whiskies]);
 
   const handleTabClick = (tab: TTabs) => {
     setActiveTab(tab);

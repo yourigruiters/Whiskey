@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { TTabs } from "../tabs/Tabs";
 import Swipe from "./components/Swipe";
 import Tasting from "./components/Tasting";
@@ -19,7 +20,10 @@ const Whiskey: FC<IWhiskey> = ({
   tasting_notes,
 }) => {
   return (
-    <div className="relative flex flex-row justify-between max-w-[400px] w-full h-[544px] bg-black">
+    <Link
+      to={`/whiskey/${title}`}
+      className="relative flex flex-row justify-between max-w-[400px] w-full h-[544px] bg-black"
+    >
       <Swipe region={region} />
       <div className="relative flex flex-col justify-end gap-y-2 w-full h-auto p-9 text-white">
         <p className="text-4xl font-bold capitalize">{title}</p>
@@ -34,7 +38,7 @@ const Whiskey: FC<IWhiskey> = ({
           className="w-full min-w-[160px] max-w-[205px] max-h-[400px]"
         />
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         element: <CollectionPage />,
       },
       {
-        path: "/whiskey",
+        path: "/whiskey/:title",
         element: <WhiskeyPage />,
       },
     ],
