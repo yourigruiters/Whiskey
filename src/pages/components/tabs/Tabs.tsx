@@ -31,6 +31,7 @@ const Tabs: FC<ITabs> = ({ activeTab, handleTabClick }) => {
       {availableTabs.map((availableTab) => {
         return (
           <Tab
+            key={availableTab}
             title={availableTab}
             active={activeTab === availableTab}
             handleTabClick={handleTabClick}
