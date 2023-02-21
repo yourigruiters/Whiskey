@@ -1,9 +1,28 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CollectionPage from "./pages/CollectionPage";
+import Root from "./pages/root/Root";
+import WhiskeyPage from "./pages/WhiskeyPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <Root />,
+    children: [
+      {
+        path: "/collection",
+        element: <CollectionPage />,
+      },
+      {
+        path: "/whiskey",
+        element: <WhiskeyPage />,
+      },
+    ],
+  },
+]);
+
 const App = () => {
-  return (
-    <div className="">
-      <p>hi</p>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
