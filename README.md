@@ -25,9 +25,23 @@ Main
 - React-router-dom
 - TypeScript
 - Vite
-- Tailwind
+- Tailwind (Mobile first responsive)
 
 Secondary
 
 - Classnames
 - Axios
+
+### Screenshots
+
+Home
+![home](/readme_screenshots/home.png)
+![home-bottom](/readme_screenshots/home-bottom.png)
+
+Single whiskey page
+![single](/readme_screenshots/single.png)
+
+Responsive images
+![responsive-home](/readme_screenshots/responsive-home.png)
+![responsive-home-bottom](/readme_screenshots/responsive-home-bottom.png)
+![responsive-single](/readme_screenshots/responsive-single.png)

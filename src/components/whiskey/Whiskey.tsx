@@ -51,7 +51,7 @@ const Whiskey: FC<IWhiskey> = ({
         <img
           src={image}
           alt="Whiskey-image"
-          className={classNames("w-full", {
+          className={classNames({
             "absolute -right-10 bottom-0 w-[160px] md:static md:w-[205px] md:h-auto":
               checkoutPage,
             "min-w-[160px] max-w-[205px] max-h-[400px]": !checkoutPage,
