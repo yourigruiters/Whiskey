@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Title from "./components/Title";
+import Title from "../components/Title";
 import axios from "axios";
-import Whiskey, { IWhiskey } from "./components/whiskey/Whiskey";
+import Whiskey, { IWhiskey } from "../components/whiskey/Whiskey";
 import { useParams } from "react-router-dom";
-import Tab from "./components/Tab";
-import Button from "./components/Button";
+import Tab from "../components/Tab";
+import Button from "../components/Button";
 
 const WhiskeyPage = () => {
   const [whiskey, setWhiskey] = useState<IWhiskey | undefined>(undefined);

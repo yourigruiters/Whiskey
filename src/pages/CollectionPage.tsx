@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import CoverImage, { ICoverImage } from "./components/CoverImage";
-import Title from "./components/Title";
+import CoverImage, { ICoverImage } from "../components/CoverImage";
+import Title from "../components/Title";
 import axios from "axios";
-import Tabs, { TTabs } from "./components/tabs/Tabs";
-import Whiskey, { IWhiskey } from "./components/whiskey/Whiskey";
+import Tabs, { TTabs } from "../components/tabs/Tabs";
+import Whiskey, { IWhiskey } from "../components/whiskey/Whiskey";
 
 const CollectionPage = () => {
   const [activeTab, setActiveTab] = useState<TTabs>("all");

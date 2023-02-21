@@ -4,6 +4,7 @@ import { TTabs } from "../tabs/Tabs";
 import Swipe from "./components/Swipe";
 import Tasting from "./components/Tasting";
 import classNames from "classnames";
+import backgroundSVG from "../../media/bg-card.svg";
 
 export interface IWhiskey {
   title: string;
@@ -32,6 +33,7 @@ const Whiskey: FC<IWhiskey> = ({
           "max-w-[400px]": !checkoutPage,
         }
       )}
+      style={{ backgroundImage: `url(${backgroundSVG})` }}
     >
       <Swipe region={region} />
       <div className="relative flex flex-col justify-end gap-y-2 w-full h-auto p-9 text-white">
