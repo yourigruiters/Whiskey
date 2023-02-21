@@ -1,8 +1,7 @@
 import { FC } from "react";
-import classNames from "classnames";
-import { TTabs } from "../../tabs/Tabs";
+import { TTabs } from "./tabs/Tabs";
 
-const colorVariantsActive = {
+const colorVariants = {
   all: "",
   campbeltown:
     "bg-gradient-to-r from-campbeltown-default to-campbeltown-hover opacity-0",
@@ -16,19 +15,20 @@ const colorVariantsActive = {
     "bg-gradient-to-r from-speyside-default to-speyside-hover opacity-0",
 };
 
-interface ISwipe {
+interface IButton {
+  title: string;
   region: TTabs;
 }
 
-const Swipe: FC<ISwipe> = ({ region }) => {
+const Button: FC<IButton> = ({ title, region }) => {
   return (
-    <div
-      className={classNames(
-        "absolute -right-2 top-12 w-16 h-1",
-        `${colorVariantsActive[region]}}`
-      )}
-    />
+    <button
+      className={`flex justify-center items-center p-4 font-bold text-xs rounded-sm uppercase transition-[background] text-white skew-x-12 sm:py-3 sm:px-6 md:py-4 md:px-8 md:font-bold md:text-sm ${colorVariants[region]}}`}
+      type="submit"
+    >
+      <p className="-skew-x-12">{title}</p>
+    </button>
   );
 };
 
-export default Swipe;
+export default Button;
